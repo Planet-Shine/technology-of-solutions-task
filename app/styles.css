@@ -1,0 +1,138 @@
+
+body, html, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding-top: 150px;
+    font-family: Arial, Verdana, Trebuchet;
+}
+
+.purchase-container {
+    margin: 0 auto;
+    width: 600px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    box-shadow: rgba(0,0,0,0.3) 0 2px 3px;
+    padding: 10px;
+}
+
+
+.purchase-list {
+    list-style: none;
+}
+
+.purchase-item {
+    border-bottom: 1px solid lightgray;
+    padding: 5px;
+}
+
+.purchase-item:last-child {
+    display: none;
+}
+
+
+.purchase-container_new .purchase-item:last-child {
+    display: block;
+}
+
+.purchase-container_new .add-button-box {
+    display: none;
+}
+
+.purchase-item__editing {
+    display: none;
+}
+
+.edit-button {
+    display: none;
+}
+.purchase-item__reading .edit-button {
+    display: inline-block;
+}
+
+.add-button {
+    display: none;
+}
+
+.purchase-button {
+    outline: none;
+    cursor: pointer;
+    padding: 10px;
+    background: lightgray;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+}
+
+/* edit mode */
+.purchase-item_edit .purchase-item__editing {
+    display: block;
+}
+
+.purchase-item_edit .purchase-item__reading {
+    display: none;
+}
+
+.purchase-item_edit .edit-button {
+    display: inline-block;
+}
+/* edit mode end */
+
+/* add mode */
+.purchase-item_add .purchase-item__editing {
+    display: inline-block;
+}
+
+.purchase-item_add .purchase-item__reading {
+    display: none;
+}
+
+.purchase-item_add .add-button {
+    display: inline-block;
+}
+/* add mode end */
+
+.purchase-caption {
+    display: inline-block;
+    vertical-align: top;
+    width: 400px;
+    overflow: hidden;
+    font-size: 18px;
+    padding-left: 20px;
+    line-height: 40px;
+    height: 40px;
+    box-sizing: border-box;
+}
+
+.purchase-input {
+    display: inline-block;
+    vertical-align: top;
+    width: 400px;
+    overflow: hidden;
+    font-size: 14px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.purchase-controls {
+    display: inline-block;
+    vertical-align: top;
+    width: 150px;
+    text-align: right;
+    height: 40px;
+}
+
+.purchase-item__editing {
+    display: none;
+}
+
+.purchase-item__edit {
+    display: none;
+}
+
+.add-button-box {
+    padding-top: 10px;
+    text-align: center;
+}
+

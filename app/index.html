@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Список покупок</title>
+
+    <link rel="stylesheet" href="styles.css" />
+    <script src="jquery.min.js" type="text/javascript"></script>
+    <script src="purchase-list.js" type="text/javascript"></script>
+
+    <script type="text/html" id="purchase-template">
+        <li class="purchase-item" data-id="{id}">
+            <div class="purchase-item__reading">
+                <div class="purchase-caption">
+                    {caption}
+                </div>
+                <div class="purchase-controls">
+                    <button type="button" class="purchase-button edit-button">Edit</button>
+                    <button type="button" class="purchase-button delete-button">Delete</button>
+                </div>
+            </div>
+            <div class="purchase-item__editing">
+                <form>
+                    <input class="purchase-input" type="text" />
+                    <div class="purchase-controls">
+                        <button type="button" class="purchase-button cancel-button">
+                            Cancel
+                        </button>
+                        <button type="button" class="purchase-button edit-button">
+                            Edit
+                        </button>
+                        <button type="button" class="purchase-button add-button">
+                            Add
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </li>
+    </script>
+
+</head>
+<body>
+    <div class="purchase-container">
+        <h3>Список покупок:</h3>
+        <ul class="purchase-list">
+
+        </ul>
+        <div class="add-button-box">
+            <button class="purchase-button new-button">
+                New
+            </button>
+        </div>
+    </div>
+</body>
+</html>
