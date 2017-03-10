@@ -96,7 +96,7 @@ $(function () {
             id = parseInt(purchaseItem.data('id'), 10);
         data.purchases.forEach(function (item) {
             if (item.id === id) {
-                data.purchases.value = input.val();
+                item.value = input.val();
             }
         });
         purchaseItem.find('.purchase-caption').html(input.val());
